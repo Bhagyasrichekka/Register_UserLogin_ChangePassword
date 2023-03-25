@@ -1,0 +1,21 @@
+###
+//Register
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{  
+    "name":"Bhagi",
+    "username":"bhagi",
+    "password": "bhagi123",
+    "gender": "Female",
+    "location":"hyderabad"
+}
+###
+//change password
+POST http://localhost:3000/change-password
+Content-Type: application/json
+{
+  "username": "bhagi",
+  "oldPassword": "bhagi123",
+  "newPassword": "bhagi@2000"
+}
